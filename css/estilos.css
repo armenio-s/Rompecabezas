@@ -1,37 +1,176 @@
+@import url(background-galeria.css);
+@import url(mobile.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-image: 
+.otras-opciones {
+    width: 920px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.otras-opciones .opciones {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: 2px solid #FBEA68;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); 
+    cursor: pointer;
+}
+
+.active {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: 2px solid #FBEA68;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.otras-opciones .opciones:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+.otras-opciones .logo {
+    margin-left: auto;
+    margin-right: 2px;
+    border: none;
+    width: 110px;
+    height: 70px;
+    margin-top: 12px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-#juego {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    height: 1200px;
-    background-color: red;
+ul {
+    padding-left: 0;
+    list-style: none;
 }
 
-.instrucciones {
-    display: flex;
-    background-color: yellow;
+#img-objetivo {
+    width: 110px;
+    margin-top: 10px;
 }
 
-.piezas {
+li {
+    padding: 5px 0;
+    animation: fadein 5s;
+}
+  
+.col-40-desktop, .col-60 {
+    display: table-cell;
     margin: 0;
-    display: flex;
-    width: 33.33%;
-    height: 33.33%;
+    vertical-align: middle;
+}
+
+.col-40-mobile {
+    display: none;
+}
+.col-40-desktop {
+    width: 300px;
+    height: 620px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 25px;
+    color: #000;
+    padding: 0 -2px -2px 0;
+}
+
+.col-60 {
+    width: 620px;
+    padding: 4px;
+    margin-left: 4px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+#pieza9 {
+    width: 33%;
+    height: 33%;
+    float: left;
+    margin: 1px;
+}
+
+.pieza {
+    width: 33%;
+    height: 33%;
+    float: left;
+    margin: 1px;
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #505050;
+}
+  
+  
+#flecha {
+    font-size: 60px;
+}
+
+#flecha-mobile {
+    font-size: 60px;
+    margin-top: 38px;
+    margin-left: 75px;
+    color: #fbea68;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-centrado img {
+    margin-top: 35px;
+    border: 2px solid #FBEA68;
+}
+  
+#juego div {
+    text-align: center;
+    animation: fadein 2s;
+}
+
+#ultimo-mov {
+    color: #FBEA68;
+    margin-top: 55px;
+}
+
+#instrucciones {
+    font-size: 0.9rem;
+    font-family: 'Coustard', sans-serif;
+    color: #fff;
+}
+
+#instrucciones h1 {
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#lista-instrucciones {
+    margin-top: 10px;
+}
+  
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

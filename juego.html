@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Pulp Fiction - The Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/gota.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/sweetalert.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+
+<body>
+  <div id="gota">
+    <div id="spinner-gota">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+<div class="logo-mobile">
+    <img id="logo" class="logo" src="img/logo.png" alt="logo pulp fiction">
+</div>
+<nav class="encabezado-logo">
+  <div id="otras-opciones" class="otras-opciones">
+    <img onclick="cambiarASamuel()" id="samuel" class="img opciones" src="img/samuel.png" alt="elegir samuel">
+    <img onclick="cambiarAJohn()" id="john" class="img active" src="img/john.png" alt="elegir john">
+    <img onclick="cambiarAUma()" id="uma" class="img opciones"src="img/uma.png" alt="elegir uma">
+    <img onclick="cambiarABruce()" id="bruce" class="img opciones"src="img/bruce.png" alt="elegir bruce">
+    <img id="logo" class="logo" src="img/logo.png" alt="logo pulp fiction">
+  </div>
+</nav>
+
+<div class="container">
+
+  <section class="col-40-desktop">
+    <div id="titulo"></div>
+    <div id="instrucciones">
+      <h1>INSTRUCCIONES</h1>
+      <ul id="lista-instrucciones"></ul>
+    </div>
+    <div id="objetivo">
+      <div class="texto-centrado">
+        <img id="imagen-objetivo" src="img/john.png" alt="imagen objetivo">
+      </div>
+    <div id="ultimo-mov">
+      <div id="flecha" class="texto-centrado"></div>
+    </div>
+  </section>
+
+  <section class="col-40-mobile">
+    <div id="titulo"></div>
+    <div id="instrucciones">
+      <h1>INSTRUCCIONES</h1>
+      <ul id="lista-instrucciones-mobile"></ul>
+    </div>
+    <div id="objetivo">
+      <div class="texto-centrado"></div>
+      <img id="img-objetivo" src="img/john.png" alt="imagen objetivo">
+      <div id="flecha-mobile" class="texto-centrado"></div>
+  </section>
+  
+  <section class="col-60">
+    <div id="juego">
+      <img class="pieza" id="pieza1" src="img/John/01.png" alt="pieza 1">
+      <img class="pieza" id="pieza2" src="img/John/02.png" alt="pieza 2">
+      <img class="pieza" id="pieza3" src="img/John/03.png" alt="pieza 3">
+      <img class="pieza" id="pieza4" src="img/John/04.png" alt="pieza 4">
+      <img class="pieza" id="pieza5" src="img/John/05.png" alt="pieza 5">
+      <img class="pieza" id="pieza6" src="img/John/06.png" alt="pieza 6">
+      <img class="pieza" id="pieza7" src="img/John/07.png" alt="pieza 7">
+      <img class="pieza" id="pieza8" src="img/John/08.png" alt="pieza 8">
+      <img class="pieza" id="pieza9" src="img/glitch.gif" alt="pieza 9">
+    </div>
+  </section>
+</div>
+
+  <script src="js/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/juego.js"></script>
+  <script src="js/cambiar-personajes.js"></script>
+</body>
+
+</html>

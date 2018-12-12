@@ -1,0 +1,330 @@
+/* Estilos de la pantalla de bienvenida */
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+    video {
+        width: 20%;
+        margin-top: 7%;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .container svg {
+        margin-top: -180px;
+    }
+
+    .container .play,
+    .container .pause {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    video {
+        width: 20%;
+        margin-top: 7%;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .container svg {
+        margin-top: -150px;
+    }
+
+    .container .play,
+    .container .pause {
+        margin-top: 90px;
+    }
+
+    .container .puzzle {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+    video {
+        width: 20%;
+        margin-top: 7%;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .container svg {
+        margin-top: -110px;
+    }
+
+    .container .play,
+    .container .pause {
+        margin-top: 90px;
+    }
+
+    .container #comenzar {
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:768px) {
+    .container video {
+        width: 60%;
+        margin-top: 130px;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .container svg {
+        margin-top: -55px;
+    }
+
+    .container .play,
+    .container .pause {
+        margin-top: 90px;
+    }
+
+    .container #comenzar {
+        font-size: 0.7rem;
+        font-weight: 400;
+        padding: 15px;
+    }
+
+    .container .puzzle {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:499px) {
+    .container video {
+        width: 60%;
+        margin-top: 130px;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .container svg {
+        margin-top: -25px;
+    }
+
+    .container .play,
+    .container .pause {
+        margin-top: 90px;
+        font-size: 0.9rem;
+    }
+
+    .container .musica {
+        font-size: 0.9rem;
+    }
+
+    .container #comenzar {
+        font-size: 0.7rem;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    .container .puzzle {
+        width: 130px;
+    }
+}
+
+/* Estilos del juego. */
+@media screen and (min-width: 993px) {
+    .logo-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+    .container .col-40-desktop {
+        display: none;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    #objetivo {
+        display: flex;
+    }
+      
+
+    #objetivo #img-objetivo {
+        width: 280px;
+    }
+
+    #objetivo #flecha-mobile {
+        margin-top: 100px;
+        margin-left: 100px;
+        font-size: 90px;
+    }
+
+    .container .col-40-mobile {
+        display: block;
+        position: absolute;
+        margin-top: 650px;
+        width: 620px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 25px;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    #otras-opciones {
+        width: 600px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:768px) {
+    .container .col-40-desktop {
+        display: none;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    #objetivo {
+        display: flex;
+    }    
+
+    .container .col-40-mobile {
+        display: block;
+        position: absolute;
+        margin-top: 360px;
+        width: 350px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 25px;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    #otras-opciones {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 75px;
+    }
+
+    #otras-opciones .opciones {
+        width: 50px;
+        height: 50px;
+    }
+
+    #otras-opciones .active {
+        width: 50px;
+        height: 50px;
+    }
+
+    #otras-opciones .logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    .container .col-60 {
+        width: 350px;
+    }
+
+    .col-60 .pieza {
+        width: 32.62%;
+    }
+
+    .col-60 #pieza9 {
+        width: 32.62%;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:499px) {
+    .container .col-40-desktop {
+        display: none;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    #objetivo {
+        display: flex;
+    }    
+
+    #objetivo #flecha-mobile {
+        margin-left: 40px;
+    }
+
+    .container .col-40-mobile {
+        display: block;
+        position: absolute;
+        margin-top: 290px;
+        width: 270px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        padding: 25px;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    #otras-opciones {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    #otras-opciones .opciones {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    #otras-opciones .active {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    #otras-opciones .logo {
+        display: none;
+    }
+
+    .container .col-60 {
+        width: 270px;
+    }
+
+    .col-60 .pieza {
+        width: 32.55%;
+    }
+
+    .col-60 #pieza9 {
+        width: 32.55%;
+    }
+
+    .logo-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        width: 110px;
+        height: 70px;
+        margin-top: 25px;
+    }
+
+    .logo-mobile img {
+        border: none;
+    }
+}
