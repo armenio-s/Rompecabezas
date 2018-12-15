@@ -3,6 +3,16 @@ Todos los cambios realizados en este repositorio están aquí.
 
 ## [Unreleased]
 
+## [1.2.0] - 2018-12-15
+### Added
+
+### Changed
+- Cambia la lógica del movimiento de piezas para emular mejor el rompecabezas.
+- Mejora de la función para chequear si el usuario gana, y que no se ejecute la variable grilla constantemente.
+- Corrección del loader para que se muestre siempre por encima del resto de los elementos.
+
+### Removed
+
 ## [1.1.0] - 2018-12-09
 ### Added
 - Mejora de responsive, se hace todo el estilado mediante media queries.

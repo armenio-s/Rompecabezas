@@ -107,6 +107,7 @@ li {
     height: 33%;
     float: left;
     margin: 1px;
+    opacity: 0;
 }
 
 .pieza {

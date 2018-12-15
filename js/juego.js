@@ -12,9 +12,16 @@ var loader = document.getElementById('gota');
 
 // Arreglo que representa la grilla.
 var grilla = [
-		[1, 2, 3],
-		[4, 5, 6],
-		[7, 8, 9]
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
+];
+
+// Arreglo que representa el puzzle resuelto.
+var puzzleResuelto = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
 ];
 
 // Variables que guardan la posición de la pieza vacía
@@ -39,14 +46,8 @@ function ultimoMovimiento(direccion){
 function chequearSiGano() {
   var contador = 0;
   
-	var puzzleResuelto = [
-		[1, 2, 3],
-		[4, 5, 6],
-		[7, 8, 9]
-  ];
-  
 	for(i = 0; i < grilla.length; i++){ 
-	  for(j = 0; j < puzzleResuelto.length; j++){
+	  for(j = 0; j < grilla[i].length; j++){
 		if (grilla[i][j] == puzzleResuelto[i][j]) {
 	    contador++;
 		  }
@@ -95,33 +96,32 @@ function posicionValida(fila, columna) {
 	}
 }
 
-// Intercambio de posición con otro elemento.
 function moverEnDireccion(direccion) {
 	var nuevaFilaPiezaVacia;
 	var nuevaColumnaPiezaVacia;
 
 	// Mueve pieza hacia la abajo, reemplazandola con la blanca.
 	if (direccion === codigosDireccion.ABAJO) {
-		nuevaFilaPiezaVacia = filaVacia + 1;
+		nuevaFilaPiezaVacia = filaVacia - 1;
 		nuevaColumnaPiezaVacia = columnaVacia;
 	}
 		
 	// Mueve pieza hacia arriba, reemplazandola con la blanca.
 	else if (direccion === codigosDireccion.ARRIBA) {
-		nuevaFilaPiezaVacia = filaVacia - 1;
+		nuevaFilaPiezaVacia = filaVacia + 1;
 		nuevaColumnaPiezaVacia = columnaVacia;
 	}
 		
 	// Mueve pieza hacia la derecha, reemplazandola con la blanca.
 	else if (direccion === codigosDireccion.DERECHA) {
 		nuevaFilaPiezaVacia = filaVacia;
-		nuevaColumnaPiezaVacia = columnaVacia + 1;
+		nuevaColumnaPiezaVacia = columnaVacia - 1;
 	}
 		
 	// Mueve pieza hacia la izquierda, reemplazandola con la blanca.
 	else if (direccion === codigosDireccion.IZQUIERDA) {
 		nuevaFilaPiezaVacia = filaVacia;
-		nuevaColumnaPiezaVacia = columnaVacia - 1;
+		nuevaColumnaPiezaVacia = columnaVacia + 1;
 	}
 
 	// Chequea si la nueva posición es válida.
@@ -253,7 +253,7 @@ function capturarTeclas() {
 function iniciar() {
 		mostrarInstrucciones(instrucciones);
 		mostrarInstruccionEnListaMobile(instrucciones);
-		mezclarPiezas(35);
+		mezclarPiezas(45);
 		capturarTeclas();
 }
 
