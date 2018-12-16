@@ -1,5 +1,5 @@
 // Arreglo que contiene las instrucciones del juego.
-var instrucciones = ["Mové la ficha sin señal utilizando las flechas del teclado para ordenar las piezas y llegar a la imagen objetivo."];
+var instrucciones = ["Mové las fichas utilizando las flechas del teclado para ordenarlo y llegar a la imagen objetivo"];
 
 //Arreglo que guarda los movimientos realizados durante el juego.
 var movimientos = [];

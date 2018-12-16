@@ -10,6 +10,7 @@ Todos los cambios realizados en este repositorio están aquí.
 - Cambia la lógica del movimiento de piezas para emular mejor el rompecabezas.
 - Mejora de la función para chequear si el usuario gana, y que no se ejecute la variable grilla constantemente.
 - Corrección del loader para que se muestre siempre por encima del resto de los elementos.
+- Cambio del arreglo de instrucciones.
 
 ### Removed
 
